@@ -394,37 +394,62 @@
         
           
             <h6 id="将逻辑回归模型作为神经网络"><a href="#将逻辑回归模型作为神经网络" class="headerlink" title="将逻辑回归模型作为神经网络"></a>将逻辑回归模型作为神经网络</h6><ul>
-<li><p>预测输出<br>$$<br>\hat{y} = sigmoid(w^{T} + b)<br>$$</p>
-<p>$$<br>sigmoid = \frac{1}{1 + e^{-z}}<br>$$</p>
-</li>
+<li><p>预测输出 </p>
+<script type="math/tex; mode=display">
+\hat{y} = sigmoid(w^{T} + b)</script><script type="math/tex; mode=display">
+sigmoid = \frac{1}{1 + e^{-z}}</script></li>
 </ul>
 <ul>
 <li><p>损失函数（Loss）：</p>
-<p>对于线性回归中：<br>$$<br>L = \left(\dfrac{1}{2}\right) (\hat{y} - y)^{2}<br>$$<br>而在逻辑回归中，损失函数被定义为：<br>$$<br>L = -(ylog(\hat{y}) + (1-y)log(1-\hat{y}))<br>$$<br>具体而言，可以这么理解 yhat：</p>
-<p>即在给定x的情况下 y等于1的概率为多少<br>$$<br>\hat{y} = p(y=1|x)<br>$$</p>
-</li>
+<p>对于线性回归中：</p>
+<script type="math/tex; mode=display">
+L = \left(\dfrac{1}{2}\right) (\hat{y} - y)^{2}</script><p>而在逻辑回归中，损失函数被定义为：</p>
+<script type="math/tex; mode=display">
+L = -(ylog(\hat{y}) + (1-y)log(1-\hat{y}))</script><p>具体而言，可以这么理解 yhat：</p>
+<p>即在给定x的情况下 y等于1的概率为多少 </p>
+<script type="math/tex; mode=display">
+\hat{y} = p(y=1|x)</script></li>
 </ul>
 <p>  也就是说 </p>
-<p>  如果 y=1<br>  $$<br>  p(y|x) = \hat{y}<br>  $$<br>  如果 y=0<br>  $$<br>  p(y|x) = 1 - \hat{y}<br>  $$<br>  将两种情况写在一起 即为  （将y=0 y=1 代入 可以得到与上面相同的公式）<br>  $$<br>  p(y|x) = \hat{y}^{y}(1 - \hat{y})^{1 - y}<br>  $$<br>  又由于log函数为单调增函数，故取对数<br>  $$<br>  log\left(p(y|x)\right) = ylog(\hat{y}) + (1-y)log(1-\hat{y}) = -L<br>  $$<br>  注意这里的负号，因为在逻辑回归中，我们想最大化概率，所以就需要最小化损失函数。</p>
+<p>  如果 y=1  </p>
+<script type="math/tex; mode=display">
+  p(y|x) = \hat{y}</script><p>  如果 y=0</p>
+<script type="math/tex; mode=display">
+  p(y|x) = 1 - \hat{y}</script><p>  将两种情况写在一起 即为  （将y=0 y=1 代入 可以得到与上面相同的公式）</p>
+<script type="math/tex; mode=display">
+  p(y|x) = \hat{y}^{y}(1 - \hat{y})^{1 - y}</script><p>  又由于log函数为单调增函数，故取对数</p>
+<script type="math/tex; mode=display">
+  log\left(p(y|x)\right) = ylog(\hat{y}) + (1-y)log(1-\hat{y}) = -L</script><p>  注意这里的负号，因为在逻辑回归中，我们想最大化概率，所以就需要最小化损失函数。</p>
 <ul>
 <li><p>代价函数（COST）</p>
-<p>在m个样本中的代价可以定义为<br>$$<br>log(p) = log\prod_{i=1}^m p(y^\left(i\right)|x^\left(i\right)) = \sum_{i=1}^m log\left(p(y^\left(i\right)|x^\left(i\right))\right) = -\sum_{i=1}^m L(\hat{y}^\left(i\right),y^\left(i\right))<br>$$<br>（在统计学中，有一种最大似然估计的方法，即选择使式子最大化的参数。）</p>
-<p>则有<br>$$<br>J(w,b) =\frac{1}{m}\sum_{i=1}^m  L(\hat{y}^\left(i\right),y^\left(i\right))<br>$$<br>因为这里要求最小值，故不需要这个负号(1/m 为缩放系数，只是为了最后的数值能在更好的尺度上，没有其他特殊含义)</p>
+<p>在m个样本中的代价可以定义为</p>
+<script type="math/tex; mode=display">
+log(p) = log\prod_{i=1}^m p(y^\left(i\right)|x^\left(i\right)) = \sum_{i=1}^m log\left(p(y^\left(i\right)|x^\left(i\right))\right) = -\sum_{i=1}^m L(\hat{y}^\left(i\right),y^\left(i\right))</script><p>（在统计学中，有一种最大似然估计的方法，即选择使式子最大化的参数。）</p>
+<p>则有 </p>
+<script type="math/tex; mode=display">
+J(w,b) =\frac{1}{m}\sum_{i=1}^m  L(\hat{y}^\left(i\right),y^\left(i\right))</script><p>因为这里要求最小值，故不需要这个负号(1/m 为缩放系数，只是为了最后的数值能在更好的尺度上，没有其他特殊含义)</p>
 </li>
 </ul>
 <ul>
 <li><p>梯度下降</p>
 <p>在逻辑回归中，我们有以下的定义：</p>
 <p><img src="https://i.loli.net/2020/03/28/P8XJSrQYeNp4ozO.png" alt=""></p>
-<p>对其求偏导数（链式求导，如果不熟悉，可以看宇哥的十八讲~）<br>$$<br>\frac{dL}{da} = -\frac{y}{a} + \frac{1-y}{1-a}<br>$$</p>
-<p>$$<br>\frac{da}{dz} =-(1+e^{-z})^{-2} * -e^{-z} = e^{-z}<em>(1+e^{-z})^{-2} = a</em>(1-a)<br>$$</p>
-</li>
+<p>对其求偏导数（链式求导，如果不熟悉，可以看宇哥的十八讲~）</p>
+<script type="math/tex; mode=display">
+\frac{dL}{da} = -\frac{y}{a} + \frac{1-y}{1-a}</script><script type="math/tex; mode=display">
+\frac{da}{dz} =-(1+e^{-z})^{-2} * -e^{-z} = e^{-z}*(1+e^{-z})^{-2} = a*(1-a)</script></li>
 </ul>
-<p>注：<br>$$<br> e^{-z}<em>(1+e^{-z})^{-2} = \frac{e^{-z}}{(1+e^{-z})^{2}} = \frac{1+e^{-z}-1}{(1+e^{-z})^{2}} = \frac{1}{1+e^{-z}} - \frac{1}{(1+e^{-z})^{2}} = a-a^2=a(1-a)<br>$$<br>则有<br>$$<br>\frac{dL}{dz} = \frac{dL}{da} * \frac{da}{dz} =(-\frac{y}{a} + \frac{1-y}{1-a}) * a(1-a)=a-y<br>$$<br>同样的<br>$$<br>\frac{dL}{dw1} = x_1</em>dz<br>$$<br>在计算出这些导数后，就可以进行梯度下降了</p>
-<p>$$<br>w_1 = w_1 - \alpha*dw_1<br>$$</p>
-<p>$$<br>w_2 = w_2 - \alpha*dw_2<br>$$</p>
-<p>$$<br>b = b =\alpha*db<br>$$</p>
-<hr>
+<p>注：</p>
+<script type="math/tex; mode=display">
+e^{-z}*(1+e^{-z})^{-2} = \frac{e^{-z}}{(1+e^{-z})^{2}} = \frac{1+e^{-z}-1}{(1+e^{-z})^{2}} = \frac{1}{1+e^{-z}} - \frac{1}{(1+e^{-z})^{2}} = a-a^2=a(1-a)</script><p>则有</p>
+<script type="math/tex; mode=display">
+\frac{dL}{dz} = \frac{dL}{da} * \frac{da}{dz} =(-\frac{y}{a} + \frac{1-y}{1-a}) * a(1-a)=a-y</script><p>同样的</p>
+<script type="math/tex; mode=display">
+\frac{dL}{dw1} = x_1*dz</script><p>在计算出这些导数后，就可以进行梯度下降了</p>
+<script type="math/tex; mode=display">
+w_1 = w_1 - \alpha*dw_1</script><script type="math/tex; mode=display">
+w_2 = w_2 - \alpha*dw_2</script><script type="math/tex; mode=display">
+b = b -\alpha*db</script><hr>
 <p>以上就是对第二周的小小整理（没有对向量化的部分以及numpy的使用做总结，关于numpy的使用会单独写），具体来说，这门课和之前的机器学习中讲的略有不同，比如记号之类的地方，但是大体而言还是差不多的，加油加油！</p>
 
           
@@ -667,16 +692,12 @@
           
             <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
           
