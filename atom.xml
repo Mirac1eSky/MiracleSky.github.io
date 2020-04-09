@@ -27,6 +27,8 @@
     
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
 &lt;h1 id=&quot;NexT从5-1-x-—-gt-7-8-0-中遇到的坑&quot;&gt;&lt;a href=&quot;#NexT从5-1-x-—-gt-7-8-0-中遇到的坑&quot; class=&quot;headerlink&quot; title=&quot;NexT从5.1.x  —&amp;gt; 7.8.0 中遇到的坑&quot;&gt;&lt;/a&gt;NexT从5.1.x  —&amp;gt; 7.8.0 中遇到的坑&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;今天闲来无事，发现NexT已经更新到7.8.0，而自己前几天刚刚搭好的博客还是5.1版本，内心十万只羊驼呼啸而过。。。虽然很不情愿，但本着早生晚生都要生的态度，就决定在折腾一把，进行升级。。。谨以此文，纪念我升级过程中遇到的大坑。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -52,7 +54,9 @@
     
     <summary type="html">
     
-      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
 
 &lt;h1 id=&quot;Deep-Learning-深层神经网络&quot;&gt;&lt;a href=&quot;#Deep-Learning-深层神经网络&quot; class=&quot;headerlink&quot; title=&quot;[Deep Learning] 深层神经网络&quot;&gt;&lt;/a&gt;[Deep Learning] 深层神经网络&lt;/h1&gt;&lt;p&gt;本周目标：&lt;/p&gt;
 &lt;ul&gt;
@@ -87,6 +91,8 @@
     
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
 
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
 &lt;h1 id=&quot;Deep-Learning-浅层神经网络&quot;&gt;&lt;a href=&quot;#Deep-Learning-浅层神经网络&quot; class=&quot;headerlink&quot; title=&quot;[Deep Learning] 浅层神经网络&quot;&gt;&lt;/a&gt;[Deep Learning] 浅层神经网络&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;理解隐藏层和隐藏单元&lt;/li&gt;
 &lt;li&gt;能够使用多种类型的激活函数&lt;/li&gt;
@@ -109,11 +115,13 @@
     <link href="http://miraclesky.cn/posts/3ee1b592.html"/>
     <id>http://miraclesky.cn/posts/3ee1b592.html</id>
     <published>2020-03-26T11:17:02.000Z</published>
-    <updated>2020-04-08T02:07:07.632Z</updated>
+    <updated>2020-04-09T06:05:18.394Z</updated>
     
     <summary type="html">
     
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
 
 &lt;h1 id=&quot;Deep-Learning-将逻辑回归模型作为神经网络&quot;&gt;&lt;a href=&quot;#Deep-Learning-将逻辑回归模型作为神经网络&quot; class=&quot;headerlink&quot; title=&quot;[Deep Learning]将逻辑回归模型作为神经网络&quot;&gt;&lt;/a&gt;[Deep Learning]将逻辑回归模型作为神经网络&lt;/h1&gt;&lt;p&gt;最近开始学习吴恩达的deeplearning课程，从第二周开始，会开始介绍关于逻辑回归模型的一些简单定义，在这里开始做一些简单的笔记，用以后面的复习。&lt;/p&gt;
     
