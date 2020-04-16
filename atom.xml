@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2020-04-09T09:05:15.000Z</updated>
+  <updated>2020-04-16T07:30:36.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>吴恩达深度学习系列SCW1</title>
+    <link href="https://miraclesky.cn/posts/1ca99e0.html"/>
+    <id>https://miraclesky.cn/posts/1ca99e0.html</id>
+    <published>2020-04-16T07:30:36.000Z</published>
+    <updated>2020-04-16T07:30:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://miraclesky.cn/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>力扣每日一题</title>
