@@ -25,14 +25,10 @@
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;
-        
-      
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;今天在碰到一个偏向挂机的游戏，需要点击屏幕来赚取经济。为了防止鼠标过早报废，所以就想写个脚本自动模拟点击。但是在直接安装PyUserInput的模块时，遇到了问题。&lt;/p&gt;
     
     </summary>
     
