@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>python安装PyUserInput的问题</title>
+      <link href="/posts/7c892205.html"/>
+      <url>/posts/7c892205.html</url>
+      
+        <content type="html"><![CDATA[<script type="text/javascript" src="/js/baidu.js"></script><script type="text/javascript" src="/js/360.js"></script><p>今天在碰到一个偏向挂机的游戏，需要点击屏幕来赚取经济。为了防止鼠标过早报废，所以就想写个脚本自动模拟点击。但是在直接安装PyUserInput的模块时，遇到了问题。查阅资料后发现是因为安装PyUserInput之前需要安装pyHook模块。所以直接去 <a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/" target="_blank" rel="external nofollow noopener noreferrer">这个网址</a>上搜索然后直接下载（注意：要下载与你python对应的版本，比如我的是3.5版本64位，所以就下载pyHook‑1.5.1‑cp35‑cp35m‑win_amd64.whl）。然后进入到下载目录，切换到你的虚拟环境，直接pip install。之后在在直接用 pip install PyUserInput就不会出现问题了。</p><p>然后导入模块：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pymouse,pykeyboard,os,sys</span><br><span class="line"><span class="keyword">from</span> pymouse <span class="keyword">import</span> *</span><br><span class="line"><span class="keyword">from</span> pykeyboard <span class="keyword">import</span> PyKeyboard</span><br></pre></td></tr></table></figure><p>实例化：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">m = PyMouse() </span><br><span class="line">k = PyKeyboard()</span><br></pre></td></tr></table></figure><p>最后模拟点击屏幕：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">m.click(x,y,button,n) </span><br><span class="line"><span class="comment">#鼠标点击 x,y –是坐标位置 </span></span><br><span class="line"><span class="comment">#buttong –1表示左键，2表示点击右键 </span></span><br><span class="line"><span class="comment">#n –点击次数，默认是1次，2表示双击</span></span><br></pre></td></tr></table></figure><p>最后在线程写个循环就可以了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> pip安装失败 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PyUserInput </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>吴恩达深度学习系列SCW1</title>
       <link href="/posts/1ca99e0.html"/>
       <url>/posts/1ca99e0.html</url>
       
-        <content type="html"><![CDATA[<script type="text/javascript" src="/js/baidu.js"></script><script type="text/javascript" src="/js/360.js"></script><h1 id="【吴恩达深度学习系列第二课第一周笔记】"><a href="#【吴恩达深度学习系列第二课第一周笔记】" class="headerlink" title="【吴恩达深度学习系列第二课第一周笔记】"></a>【吴恩达深度学习系列第二课第一周笔记】</h1><p>现在开始记录第二课程的笔记。会慢慢更新的。</p><a id="more"></a><h2 id="正确设置训练集，验证集（开发集）测试集"><a href="#正确设置训练集，验证集（开发集）测试集" class="headerlink" title="正确设置训练集，验证集（开发集）测试集"></a>正确设置训练集，验证集（开发集）测试集</h2><p>在机器学习小数据量时代即当你的数据集在100,1000,10000的时候，可以采用60%：20%：20%的比例来，即用60%的数据来训练模型，20%的数据来评估不同你不同的模型，最后用20%的数据集来评估选定模型的性能。</p><p>但是当数量达到百万级别时，我们就可能不在需要这么高的比例来划分出验证集。因为验证集的目的就是用来快速验证不同的算法之间的差别，所以可能不再不要这么多的数据作为验证集。举个例子，当我们有一百万的数据时，可能只需要一万条数据来验证就行了。同样的，最后的测试集也是如此。所以最终的比例就是98%：1%：1%。对于数据量过百万的情况，可能就是99.5%：0.25%：0.25%.</p><h2 id="训练集和测试集分布不匹配"><a href="#训练集和测试集分布不匹配" class="headerlink" title="训练集和测试集分布不匹配"></a>训练集和测试集分布不匹配</h2><p>比如说你有个应用，通过用户上传图片，然后告诉用户这张图片是不是猫咪。相比较而言，你的训练集都是从网上下载下来的高分辨率图片，并且构图精巧。而用户上传的图片可能分辨率就不是很高，并且更加随意。这个时候你的训练集和测试集的分布就不一样了。对此，吴老师的建议是确保分布相同，具体会在后面的课程提到。</p><h2 id="偏差和方差以及偏差方差权衡"><a href="#偏差和方差以及偏差方差权衡" class="headerlink" title="偏差和方差以及偏差方差权衡"></a>偏差和方差以及偏差方差权衡</h2><p>对于偏差和方差问题应该都会有大致了解了。比如高偏差对应欠拟合，高方差对应了过拟合。如图所示：</p><p><img src="https://i.loli.net/2020/04/16/s7D4uXlU5OikgQB.png" style="zoom:50%;"></p><p>接下来看看如何分析偏差和方差：</p><p>假设你有个识别猫咪的分类器，得到了不同的误差集合：</p><p><img src="https://i.loli.net/2020/04/16/dyigBtOIGLu3nzc.png" alt></p><ol><li><p>当训练集误差是第一列时，可以看到在训练集上误差很小，但是在验证集上误差很大，说明过拟合了。</p></li><li><p>当训练集为第二列时，可以看到在训练集和验证集上的表现都不是很好，说明该模型在训练集是欠拟合，而在验证集上表现也符合该预测</p></li><li>当训练集为第三列时，训练集和验证集的表现都不行，并且验证集的表现比训练集差很多。说明该模型不仅存在高偏差的问题，并且还存在高方差的问题。也就是说该分类器在总体上是欠拟合的，但是在部分数据上又表现出过拟合的问题。</li><li>第四列则是开发人员很希望看到的，就是在训练集和验证集上的误差都很小，说明是适拟合的情况。</li></ol>]]></content>
+        <content type="html"><![CDATA[<script type="text/javascript" src="/js/baidu.js"></script><script type="text/javascript" src="/js/360.js"></script><h1 id="【吴恩达深度学习系列第二课第一周笔记】"><a href="#【吴恩达深度学习系列第二课第一周笔记】" class="headerlink" title="【吴恩达深度学习系列第二课第一周笔记】"></a>【吴恩达深度学习系列第二课第一周笔记】</h1><p>现在开始记录第二课程的笔记。会慢慢更新的。</p><p>关键概念：</p><ul><li><p>不同类型的初始化会导致不同的结果</p></li><li><p>认识复杂神经网络初始化的重要性。</p></li><li><p>识别 train / dev / test 集之间的差异</p></li><li><p>诊断模型中的偏差和方差问题</p></li><li><p>学习何时以及如何使用规范化方法，例如退学或第二语言规范化。</p></li><li><p>理解深度学习中的实验问题，比如消失或爆炸梯度，并学习如何处理它们</p></li><li><p>使用梯度检查来验证反向传播实现的正确性</p></li></ul><a id="more"></a><h2 id="正确设置训练集，验证集（开发集）测试集"><a href="#正确设置训练集，验证集（开发集）测试集" class="headerlink" title="正确设置训练集，验证集（开发集）测试集"></a>正确设置训练集，验证集（开发集）测试集</h2><p>在机器学习小数据量时代即当你的数据集在100,1000,10000的时候，可以采用60%：20%：20%的比例来，即用60%的数据来训练模型，20%的数据来评估不同你不同的模型，最后用20%的数据集来评估选定模型的性能。</p><p>但是当数量达到百万级别时，我们就可能不在需要这么高的比例来划分出验证集。因为验证集的目的就是用来快速验证不同的算法之间的差别，所以可能不再不要这么多的数据作为验证集。举个例子，当我们有一百万的数据时，可能只需要一万条数据来验证就行了。同样的，最后的测试集也是如此。所以最终的比例就是98%：1%：1%。对于数据量过百万的情况，可能就是99.5%：0.25%：0.25%.</p><h2 id="训练集和测试集分布不匹配"><a href="#训练集和测试集分布不匹配" class="headerlink" title="训练集和测试集分布不匹配"></a>训练集和测试集分布不匹配</h2><p>比如说你有个应用，通过用户上传图片，然后告诉用户这张图片是不是猫咪。相比较而言，你的训练集都是从网上下载下来的高分辨率图片，并且构图精巧。而用户上传的图片可能分辨率就不是很高，并且更加随意。这个时候你的训练集和测试集的分布就不一样了。对此，吴老师的建议是确保分布相同，具体会在后面的课程提到。</p><h2 id="偏差和方差以及偏差方差权衡"><a href="#偏差和方差以及偏差方差权衡" class="headerlink" title="偏差和方差以及偏差方差权衡"></a>偏差和方差以及偏差方差权衡</h2><p>对于偏差和方差问题应该都会有大致了解了。比如高偏差对应欠拟合，高方差对应了过拟合。如图所示：</p><p><img src="https://i.loli.net/2020/04/16/s7D4uXlU5OikgQB.png" style="zoom:50%;"></p><p>接下来看看如何分析偏差和方差：</p><p>假设你有个识别猫咪的分类器，得到了不同的误差集合：</p><p><img src="https://i.loli.net/2020/04/16/dyigBtOIGLu3nzc.png" alt></p><ol><li><p>当训练集误差是第一列时，可以看到在训练集上误差很小，但是在验证集上误差很大，说明过拟合了。</p></li><li><p>当训练集为第二列时，可以看到在训练集和验证集上的表现都不是很好，说明该模型在训练集是欠拟合，而在验证集上表现也符合该预测</p></li><li>当训练集为第三列时，训练集和验证集的表现都不行，并且验证集的表现比训练集差很多。说明该模型不仅存在高偏差的问题，并且还存在高方差的问题。也就是说该分类器在总体上是欠拟合的，但是在部分数据上又表现出过拟合的问题。</li><li>第四列则是开发人员很希望看到的，就是在训练集和验证集上的误差都很小，说明是适拟合的情况。</li></ol>]]></content>
       
       
       <categories>
