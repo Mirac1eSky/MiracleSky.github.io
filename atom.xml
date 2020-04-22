@@ -41,7 +41,7 @@
   </entry>
   
   <entry>
-    <title>吴恩达深度学习系列SCW1</title>
+    <title>吴恩达深度学习系列第二课第一周笔记</title>
     <link href="https://miraclesky.cn/posts/1ca99e0.html"/>
     <id>https://miraclesky.cn/posts/1ca99e0.html</id>
     <published>2020-04-16T07:30:36.000Z</published>
@@ -57,15 +57,15 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;不同类型的初始化会导致不同的结果&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;认识复杂神经网络初始化的重要性。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;认识复杂神经网络初始化的重要性&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;识别 train / dev / test 集之间的差异&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;诊断模型中的偏差和方差问题&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;学习何时以及如何使用规范化方法，例如退学或第二语言规范化。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;学习何时以及如何使用规范化方法&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;理解深度学习中的实验问题，比如消失或爆炸梯度，并学习如何处理它们&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;理解深度学习中的实验问题&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;使用梯度检查来验证反向传播实现的正确性&lt;/p&gt;
 &lt;/li&gt;
