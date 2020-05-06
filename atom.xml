@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2020-04-28T07:03:24.000Z</updated>
+  <updated>2020-05-06T11:02:17.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>吴恩达课后作业ImprovingDeepNeuralNetworks第3周</title>
+    <link href="https://miraclesky.cn/posts/104ffa59.html"/>
+    <id>https://miraclesky.cn/posts/104ffa59.html</id>
+    <published>2020-05-06T11:02:17.000Z</published>
+    <updated>2020-05-06T11:02:17.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;TensorFlow-教程&quot;&gt;&lt;a href=&quot;#TensorFlow-教程&quot; class=&quot;headerlink&quot; title=&quot;TensorFlow 教程&quot;&gt;&lt;/a&gt;TensorFlow 教程&lt;/h1&gt;&lt;p&gt;Welcome to this week’s programming assignment. Until now, you’ve always used numpy to build neural networks. Now we will step you through a deep learning framework that will allow you to build neural networks more easily. Machine learning frameworks like TensorFlow, PaddlePaddle, Torch, Caffe, Keras, and many others can speed up your machine learning development significantly. All of these frameworks also have a lot of documentation, which you should feel free to read. In this assignment, you will learn to do the following in TensorFlow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Initialize variables&lt;/li&gt;
+&lt;li&gt;Start your own session&lt;/li&gt;
+&lt;li&gt;Train algorithms&lt;/li&gt;
+&lt;li&gt;Implement a Neural Network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Programing frameworks can not only shorten your coding time, but sometimes also perform optimizations that speed up your code&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="TensorFlow" scheme="https://miraclesky.cn/categories/TensorFlow/"/>
+    
+    
+      <category term="课后作业" scheme="https://miraclesky.cn/tags/%E8%AF%BE%E5%90%8E%E4%BD%9C%E4%B8%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>吴恩达深度学习系列第二课第二周笔记</title>
