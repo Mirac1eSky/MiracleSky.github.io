@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2020-05-06T11:02:17.000Z</updated>
+  <updated>2021-04-15T01:44:20.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微信小游戏入门</title>
+    <link href="https://miraclesky.cn/posts/22d08c9b.html"/>
+    <id>https://miraclesky.cn/posts/22d08c9b.html</id>
+    <published>2021-04-15T01:44:20.000Z</published>
+    <updated>2021-04-15T01:44:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;微信小游戏开发入门&quot;&gt;&lt;a href=&quot;#微信小游戏开发入门&quot; class=&quot;headerlink&quot; title=&quot;微信小游戏开发入门&quot;&gt;&lt;/a&gt;微信小游戏开发入门&lt;/h1&gt;&lt;p&gt;之前学习了微信小程序开发，现在准备换换口味，尝试一下小游戏开发。开发环境和工具基本是不用换的，只不过我会尝试用一下webstorm，据说很好用。（如何申请微信开发者账号，云开发等这里不做介绍）&lt;/p&gt;
+&lt;p&gt;开发准备：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;微信开发者工具（webstorm）&lt;/li&gt;
+&lt;li&gt;nodejs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;知识储备(主要)：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;js(ES5、ES6)&lt;/li&gt;
+&lt;li&gt;canvas&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="游戏开发" scheme="https://miraclesky.cn/categories/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="微信小游戏" scheme="https://miraclesky.cn/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>吴恩达课后作业ImprovingDeepNeuralNetworks第3周</title>

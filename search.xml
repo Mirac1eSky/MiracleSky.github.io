@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>微信小游戏入门</title>
+      <link href="/posts/22d08c9b.html"/>
+      <url>/posts/22d08c9b.html</url>
+      
+        <content type="html"><![CDATA[<script type="text/javascript" src="/js/baidu.js"></script><script type="text/javascript" src="/js/360.js"></script><h1 id="微信小游戏开发入门"><a href="#微信小游戏开发入门" class="headerlink" title="微信小游戏开发入门"></a>微信小游戏开发入门</h1><p>之前学习了微信小程序开发，现在准备换换口味，尝试一下小游戏开发。开发环境和工具基本是不用换的，只不过我会尝试用一下webstorm，据说很好用。（如何申请微信开发者账号，云开发等这里不做介绍）</p><p>开发准备：</p><ul><li>微信开发者工具（webstorm）</li><li>nodejs</li></ul><p>知识储备(主要)：</p><ul><li>js(ES5、ES6)</li><li>canvas</li></ul><a id="more"></a><h2 id="小游戏体系结构认识"><a href="#小游戏体系结构认识" class="headerlink" title="小游戏体系结构认识"></a>小游戏体系结构认识</h2><h3 id="模块分解"><a href="#模块分解" class="headerlink" title="模块分解"></a>模块分解</h3><ul><li>game.js 游戏全局入口，是必须要有的文件</li><li>main.js  程序主类，主要用来初始化canvas和一些全局对象，各个精灵和帮绑定事件</li><li>director.js 程序导演类，用来控制游戏逻辑和精灵的创建销毁，控制游戏主循环</li><li>dataStore.js 存储游戏需要长期保存的变量和需要定时销毁的变量</li><li>resources.js 游戏资源</li><li>resourceLoader.js 资源加载，保证游戏是在加载图片结束后开始主循环</li><li>spirit.js 游戏精灵的基类，背景，陆地，小鸟等等都是它的子类</li><li>backGround.js 背景类，用来放幕布</li></ul><h3 id="内容实现"><a href="#内容实现" class="headerlink" title="内容实现"></a>内容实现</h3><ol><li><p>首先实现资源类，将需要用到的资源统一加载</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> Resources = [</span><br><span class="line">    [<span class="string">'background'</span>,<span class="string">'res/background.png'</span>],</span><br><span class="line">    [<span class="string">'land'</span>,<span class="string">'res/land.png'</span>],</span><br><span class="line">    [<span class="string">'pencilUp'</span>,<span class="string">'res/pie_up.png'</span>],</span><br><span class="line">    [<span class="string">'pencilDown'</span>,<span class="string">'res/pie_down.png'</span>],</span><br><span class="line">    [<span class="string">'birds'</span>,<span class="string">'res/birds.png'</span>],</span><br><span class="line">    [<span class="string">'startButton'</span>,<span class="string">'res/start_button.png'</span>]</span><br><span class="line">];</span><br></pre></td></tr></table></figure></li></ol><p>未完待续…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微信小游戏 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>吴恩达课后作业ImprovingDeepNeuralNetworks第3周</title>
       <link href="/posts/104ffa59.html"/>
       <url>/posts/104ffa59.html</url>
