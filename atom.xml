@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2021-04-15T01:44:20.000Z</updated>
+  <updated>2021-04-25T07:40:25.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>股票量化交易系统</title>
+    <link href="https://miraclesky.cn/posts/be675351.html"/>
+    <id>https://miraclesky.cn/posts/be675351.html</id>
+    <published>2021-04-25T07:40:25.000Z</published>
+    <updated>2021-04-25T07:40:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;自搭建量化交易-炒股入门&quot;&gt;&lt;a href=&quot;#自搭建量化交易-炒股入门&quot; class=&quot;headerlink&quot; title=&quot;自搭建量化交易 炒股入门&quot;&gt;&lt;/a&gt;自搭建量化交易 炒股入门&lt;/h1&gt;&lt;p&gt;对于传统金融股市以及区块链，我都将会搭建一个自动化的交易系统。再这之前，需要学习一下股票的基本信息。本篇文章只讨论传统金融股市，区块链将会放在下一篇探讨。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="股票" scheme="https://miraclesky.cn/categories/%E8%82%A1%E7%A5%A8/"/>
+    
+    
+      <category term="python3" scheme="https://miraclesky.cn/tags/python3/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小游戏入门</title>
@@ -300,7 +324,7 @@
     <link href="https://miraclesky.cn/posts/3ee1b592.html"/>
     <id>https://miraclesky.cn/posts/3ee1b592.html</id>
     <published>2020-03-26T11:17:02.000Z</published>
-    <updated>2020-04-09T06:05:18.394Z</updated>
+    <updated>2020-03-26T11:17:02.000Z</updated>
     
     <summary type="html">
     

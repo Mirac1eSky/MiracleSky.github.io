@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>股票量化交易系统</title>
+      <link href="/posts/be675351.html"/>
+      <url>/posts/be675351.html</url>
+      
+        <content type="html"><![CDATA[<script type="text/javascript" src="/js/baidu.js"></script><script type="text/javascript" src="/js/360.js"></script><h1 id="自搭建量化交易-炒股入门"><a href="#自搭建量化交易-炒股入门" class="headerlink" title="自搭建量化交易 炒股入门"></a>自搭建量化交易 炒股入门</h1><p>对于传统金融股市以及区块链，我都将会搭建一个自动化的交易系统。再这之前，需要学习一下股票的基本信息。本篇文章只讨论传统金融股市，区块链将会放在下一篇探讨。</p><a id="more"></a><h2 id="重要指标"><a href="#重要指标" class="headerlink" title="重要指标"></a>重要指标</h2><ol><li><h3 id="风险指标"><a href="#风险指标" class="headerlink" title="风险指标"></a>风险指标</h3><ul><li><p><strong>最大回撤率</strong> （Max Draw Down）</p><p>= （低谷值 - 峰值） / 峰值。</p><script type="math/tex; mode=display">MDD = \frac{Trough Value - Peak Value}{Peak Value}</script><p>实际意义就是可能亏损的最大比例。<strong>值越小，说明抗波动能力越强</strong></p></li></ul></li><li><h3 id="风险收益指标"><a href="#风险收益指标" class="headerlink" title="风险收益指标"></a>风险收益指标</h3><ul><li><p><strong>夏普比率</strong>（Sharpe Ratio）</p><p>衡量的是一项投资在对其调整风险后，相对于<strong>无风险</strong>资产的表现</p><p>SR = (期望投资回报率 - 无风险利率)  /  投资回报率标准差</p><script type="math/tex; mode=display">Sharpe Ratio = \frac{E(Rp) - R_f}{\sigma P}</script><p>无风险利率：例如国债（年化3%左右）等固收类</p><p>整个公式的意义也就是 投资者额外获得的每一单位风险所获得的额外收益</p></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 股票 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>微信小游戏入门</title>
       <link href="/posts/22d08c9b.html"/>
       <url>/posts/22d08c9b.html</url>
