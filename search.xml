@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>documentation2miniprogram</title>
+      <link href="/posts/fe6c7ef7.html"/>
+      <url>/posts/fe6c7ef7.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="皮鸽愿望管理助手使用说明文档"><a href="#皮鸽愿望管理助手使用说明文档" class="headerlink" title="皮鸽愿望管理助手使用说明文档"></a>皮鸽愿望管理助手使用说明文档</h1><p>欢迎使用微信小程序<strong>皮鸽愿望管理助手</strong>，本助手目前主要有两个功能：</p><ol><li><p>添加想要购买的<strong>商品</strong>，可以有以下操作：</p><ul><li>添加：在下方点击菜单，然后选择添加愿望商品，再按照提示操作即可</li><li>查看详情：在主页面愿望商品栏目下，点击刚刚添加的商品，可以查看详情</li><li>订阅：在详情界面且<strong>冷静期未到</strong>设定的日期时，可以选择订阅消息，订阅后，将通过微信助手发送通知给您</li><li>省钱：在详情界面且<strong>冷静期达到</strong>设定的日期时，可以选择省钱功能，该功能默认您没有购买物品且会记录您省下的金钱并将省钱次数+1</li><li>剁手（删除）：该功能只会删除此商品。</li></ul></li><li><p>添加想要记录的<strong>事件</strong>，可以有以下操作：</p><ul><li>添加：在下方点击菜单，然后选择添加事件，再按照提示操作即可</li><li>查看详情：在主页面选择<strong>目标事件</strong>栏目，可以查看</li><li>纪念日功能：当选择的日期在当前日期之前，会默认开启<strong>纪念日</strong>模式，此时计时器将会显示距离设定日期<strong>已过</strong>多长时间</li><li>倒数日功能：当选择的日期在当前日期之后，会默认开启<strong>倒数日</strong>模式，此时计时器将会显示距离设定日期<strong>还剩</strong>多长时间</li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 微信小程序 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 使用说明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>股票量化交易系统</title>
       <link href="/posts/be675351.html"/>
       <url>/posts/be675351.html</url>
