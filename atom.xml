@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2022-03-09T03:53:10.000Z</updated>
+  <updated>2022-04-15T08:22:26.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -17,29 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>documentation2miniprogram</title>
-    <link href="https://miraclesky.cn/posts/fe6c7ef7.html"/>
-    <id>https://miraclesky.cn/posts/fe6c7ef7.html</id>
-    <published>2022-03-09T03:53:10.000Z</published>
-    <updated>2022-03-09T03:53:10.000Z</updated>
+    <title>OpenCv和OpenVINO实现人脸表情识别</title>
+    <link href="https://miraclesky.cn/posts/158795f0.html"/>
+    <id>https://miraclesky.cn/posts/158795f0.html</id>
+    <published>2022-04-15T08:22:26.000Z</published>
+    <updated>2022-04-15T08:22:26.000Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;皮鸽愿望管理助手使用说明文档&quot;&gt;&lt;a href=&quot;#皮鸽愿望管理助手使用说明文档&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;利用opencv中训练好的模型来识别人脸&lt;/li&gt;
+&lt;li&gt;利用openvino中的预训练的模型来检测表情&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
     
-      <category term="微信小程序" scheme="https://miraclesky.cn/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="深度学习" scheme="https://miraclesky.cn/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="使用说明" scheme="https://miraclesky.cn/tags/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/"/>
+      <category term="表情识别" scheme="https://miraclesky.cn/tags/%E8%A1%A8%E6%83%85%E8%AF%86%E5%88%AB/"/>
+    
+      <category term="人脸识别" scheme="https://miraclesky.cn/tags/%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/"/>
     
   </entry>
   
