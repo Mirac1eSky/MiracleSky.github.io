@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://miraclesky.cn/"/>
-  <updated>2022-05-20T15:29:49.000Z</updated>
+  <updated>2022-05-23T15:12:15.000Z</updated>
   <id>https://miraclesky.cn/</id>
   
   <author>
@@ -17,7 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Pytorch从零构建ResNet</title>
+    <title>Pytorch从零构建ResNet50</title>
+    <link href="https://miraclesky.cn/posts/58b9e54a.html"/>
+    <id>https://miraclesky.cn/posts/58b9e54a.html</id>
+    <published>2022-05-23T15:12:15.000Z</published>
+    <updated>2022-05-23T15:12:15.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
+
+&lt;h1 id=&quot;Pytorch从零构建ResNet50&quot;&gt;&lt;a href=&quot;#Pytorch从零构建ResNet50&quot; class=&quot;headerlink&quot; title=&quot;Pytorch从零构建ResNet50&quot;&gt;&lt;/a&gt;Pytorch从零构建ResNet50&lt;/h1&gt;&lt;p&gt;第二章  从零构建ResNet50&lt;/p&gt;
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;ResNet 目前是应用很广的网络基础框架，所以有必要了解一下，并且resnet结构清晰，适合练手.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;有了前面resnet18的经验，现在搭建50就没那么难了，如果没有看，请移步 &lt;a href=&quot;https://blog.csdn.net/weixin_39524208/article/details/124894216&quot; target=&quot;_blank&quot; rel=&quot;external nofollow noopener noreferrer&quot;&gt;第一章  从零构建ResNet18&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;本文使用以下环境构筑&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;torch &lt;span class=&quot;number&quot;&gt;1.11&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;torchvision &lt;span class=&quot;number&quot;&gt;0.12&lt;/span&gt;&lt;span class=&quot;number&quot;&gt;.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python &lt;span class=&quot;number&quot;&gt;3.9&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://miraclesky.cn/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ResNet" scheme="https://miraclesky.cn/tags/ResNet/"/>
+    
+      <category term="Pytorch" scheme="https://miraclesky.cn/tags/Pytorch/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pytorch从零构建ResNet18</title>
     <link href="https://miraclesky.cn/posts/77df9efe.html"/>
     <id>https://miraclesky.cn/posts/77df9efe.html</id>
     <published>2022-05-20T15:29:49.000Z</published>
@@ -28,7 +63,7 @@
       &lt;script type=&quot;text/javascript&quot; src=&quot;/js/baidu.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;/js/360.js&quot;&gt;&lt;/script&gt;
 
-&lt;h1 id=&quot;Pytorch从零构建ResNet&quot;&gt;&lt;a href=&quot;#Pytorch从零构建ResNet&quot; class=&quot;headerlink&quot; title=&quot;Pytorch从零构建ResNet&quot;&gt;&lt;/a&gt;Pytorch从零构建ResNet&lt;/h1&gt;&lt;p&gt;第一章  从零构建ResNet18&lt;/p&gt;
+&lt;h1 id=&quot;Pytorch从零构建ResNet18&quot;&gt;&lt;a href=&quot;#Pytorch从零构建ResNet18&quot; class=&quot;headerlink&quot; title=&quot;Pytorch从零构建ResNet18&quot;&gt;&lt;/a&gt;Pytorch从零构建ResNet18&lt;/h1&gt;&lt;p&gt;第一章  从零构建ResNet18&lt;/p&gt;
 &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;ResNet 目前是应用很广的网络基础框架，所以有必要了解一下，并且resnet结构清晰，适合练手&lt;/p&gt;
 &lt;/li&gt;
